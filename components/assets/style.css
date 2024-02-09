@@ -1,0 +1,201 @@
+@import url(/components/assets/root.css);
+@import url(/components/assets/menu.css);
+
+body{
+    background: var(--50);
+}
+
+
+/*
+Seccion de inicio de la pagina
+*/
+.container--inicio{
+    padding: 30px 0;
+    background: var(--900);
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+.card--inicio--texto{
+    grid-column: 2 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+    width: 90%;
+    color: var(--100);
+}
+.card--inicio--texto .card--title{
+    font-size: 32px;
+    font-weight: bold;
+}
+.card--inicio--texto .card--btn{
+    padding: 10px 40px;
+    background: var(--50);
+    text-decoration: none;
+    color: var(--900);
+    border-radius: 10px;
+    transition: .2s ease all;
+}
+.card--inicio--texto .card--btn:hover{
+    background: var(--100);
+}
+.card--inicio--texto .card--btn:focus{
+    background: var(--200);
+}
+.card--inicio--imagen{
+    grid-column: 4 / 5;
+}
+.card--imagen--uno{
+    width: 300px;
+    height: 300px;
+}
+.card--img--uno{
+    width: 300px;
+    height: 300px;
+}
+/* 
+Hasta aqui llega la seccion de inicio
+*/
+
+
+/* 
+Aqui empieza la seccion del problema o nececidad de los usuarios
+*/
+.container--problema{
+    padding: 40px 0;
+    /* background: red; */
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    color: var(--900);
+}
+.card--problema--imagen{
+    grid-column: 2 / 3;
+}
+.card--imagen--dos{
+    width: 400px;
+    height: 400px;
+}
+.card--img--dos{
+    width: 400px;
+    height: 400px;
+}
+.card--problema--texto{
+    grid-column: 3 / 5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    justify-content: center;
+}
+.card--problema--texto .card--title{
+    font-size: 32px;
+    font-weight: bold;
+}
+/* 
+Hasta aqui acaba la seccion de los problmeas o neceidades de los usuarios
+*/
+
+
+/* 
+Estilos para las caracteristicas del aplicativo
+*/
+.container-caract{
+    display: grid;
+    background: var(--900);
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(11, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    gap: 10px;
+    color: var(--100);
+}
+.card--caract--textoUno{
+    grid-column: 3 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.card--caract--textoUno .card--title{
+    font-size: 22px;
+    font-weight: bold;
+}
+.card--caract--textoUno .card--text{
+    font-size: 16px;
+}
+.card--image--tres{
+    width: 100%;
+    height: 250px;
+}
+.card--img--tres{
+    width: 100%;
+    height: 250px;
+}
+.card--caract--textoDos{
+    grid-column: 6 / 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    text-align: center;
+}
+.card--decoracion{
+    width: 100px;
+    height: auto;
+}
+.card--imgDecoracion{
+    width: 100px;
+}
+.card--imagen--cuatro{
+    width: 200px;
+    height: 200px;
+}
+.card--img--cuatro{
+    width: 200px;
+    height: 200px;
+}
+.card--caract--textoDos .card--title{
+    font-size: 22px;
+    font-weight: bold;
+}
+.card--caract--textoTres{
+    grid-column: 9 / 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.card--caract--textoTres .card--title{
+    font-size: 22px;
+    font-weight: bold;
+}
+.card--imagen--cinco{
+    width: 220px;
+    height: 220px;
+}
+.card--img--cinco{
+    width: 100%;
+    height: 100%;
+}
+/* 
+Hatsa aqui van los estilos de las caracteristicas del aplicativo
+*/
