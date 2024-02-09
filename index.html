@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App de citas</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/components/assets/menu.css">
 </head>
 
 <!-- Se realiza la cabecera de la landing page -->
@@ -13,12 +14,17 @@
         <img src="/components/assets/img/Logo.png" alt="#MatchPerfect" class="logo">
     </figure>
     <nav class="cabecera--menu">
-        <ul class="cabecera--lista">
-            <li class="cabecera--items"><a href="#inicio" class="cabecera--enlaces">Inicio</a></li>
-            <li class="cabecera--items"><a href="#caracteristicas" class="cabecera--enlaces">Comunidad</a></li>
-            <li class="cabecera--items"><a href="#planes" class="cabecera--enlaces">Planes</a></li>
-            <li class="cabecera--items"><a href="#app" class="cabecera--enlaces">Obtener app</a></li>
-        </ul>
+        <div class="cabecera--nav">
+            <ul class="cabecera--lista">
+                <li class="cabecera--items"><a href="#inicio" class="cabecera--enlaces">Inicio</a></li>
+                <li class="cabecera--items"><a href="#caracteristicas" class="cabecera--enlaces">Comunidad</a></li>
+                <li class="cabecera--items"><a href="#planes" class="cabecera--enlaces">Planes</a></li>
+                <li class="cabecera--items"><a href="#app" class="cabecera--enlaces cabecera--enlaces--app">Obtener app</a></li>
+            </ul>
+            <div class="cabecera--icon">
+                <i class="fa-solid fa-bars bars"></i>
+            </div>
+        </div>
     </nav>
 </header>
 <!-- Aqui termina la cabecera de la landing page -->
@@ -241,5 +247,6 @@
         </div>
     </footer>
     <!-- Se termina el pie de la pagina  -->
+    <script src="/components/assets/menu.js"></script>
 </body>
 </html>

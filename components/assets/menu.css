@@ -1,0 +1,98 @@
+@import url(/components/assets/root.css);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--font-ubuntu);
+}
+.cabecera{
+    height: 60px;
+    background: var(--900);
+    display: flex;
+    align-items: center;
+    justify-content: space-betwe;
+    margin: 0 auto;
+    width: 100%;
+}
+.cabecera--logo{
+    margin: 0 auto;
+}
+.cabecera--menu{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cabecera--nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cabecera--lista{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.cabecera--enlaces{
+    text-decoration: none;
+    color: var(--100);
+    transition: all .2s ease;
+}
+.cabecera--enlaces:hover{
+    color: var(--300);
+}
+.cabecera--enlaces:focus{
+    color: var(--500);
+}
+.cabecera--enlaces--app{
+    padding: 10px 40px;
+    background: var(--50);
+    color: var(--900) !important;
+    border-radius: 10px;
+}
+.cabecera--enlaces--app:hover{
+    background: var(--100);
+}
+.cabecera--enlaces--app:focus{
+    background: var(--200);
+}
+.cabecera--icon{
+    display: none;
+    cursor: pointer;
+}
+@media screen and (max-width:768px) {
+    .cabecera--menu{
+        max-width: 100%;
+        justify-content: end;
+    }
+    .cabecera--lista{
+        width: 100%;
+        max-width: 100%;
+        position: absolute;
+        top: 60px;
+        left: -1000px;
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+        background: var(--900);
+        padding: 20px;
+        /* transform: translate(-200%); */
+        transition: .4s ease all;
+    }
+    .cabecera--icon{
+        display: flex;
+        position: absolute;
+        right: 40px;
+        font-size: 30px;
+    }
+    .aparecer{
+        left: 0;
+    }
+}
