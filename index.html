@@ -150,7 +150,7 @@
         <section class="container container--ventajas" id="ventajas">
             <article class="card card--ventajas--uno">
                 <figure class="card--imagen card--imagen--siste">
-                    <img src="/components/assets/img/imagen--siste.png" alt="#ImagenSiete" class="card--img card--img-siete">
+                    <img src="/components/assets/img/imagen--siste.png" alt="#ImagenSiete" class="card--img card--img--siete">
                 </figure>
             </article>
             <article class="card card--ventajas--dos">
@@ -174,12 +174,12 @@
 
         <!-- Se realiza la seccion de los planes pagos del aplicativo -->
         <section class="container container--planes" id="planes">
-            <article class="card card--vacia">
+            <article class="card card--vacia card--slider">
                 <div class="card--color"></div>
             </article>
-            <article class="card card--texto">
+            <article class="card card--texto card--slider--diff">
                 <figure class="card--escudo">
-                    <img src="/components/assets/img/escudo.png" alt="#ImagenEscudo" class="card--escudo">
+                    <img src="/components/assets/img/escudo.png" alt="#ImagenEscudo" class="card--img--escudo">
                 </figure>
                 <div class="card--content">
                     <h3 class="card--title">Plan elite</h3>
@@ -188,22 +188,28 @@
                     </p>
                 </div>
                 <div class="card--content">
-                    <h3 class="card--title">14.99 USD/Mes</h3>
                     <p class="card--text">
                         - Acceso completo
+                        <br>
                         - Eventos funcionales exclusivos
+                        <br>
                         - Asistencia prioritaria
+                        <br>
                         - Navegacion Anonima
+                        <br>
                         - Informes detallados
                     </p>
+                    <h3 class="card--title">14.99 USD/Mes</h3>
                 </div>
-                <div class="card--content">
+                <div class="card--content card--content--comprar">
                     <a href="" class="card--comprar">Comprar plan</a>
                 </div>
             </article>
-            <article class="card card--vacia">
+            <article class="card card--vacia card--slider">
                 <div class="card--color"></div>
             </article>
+            <button id="siguiente">></button>
+            <button id="anterior"><</button>
         </section>
         <!-- Aqui acaba la seccion de los planes de la aplicacion -->
 
