@@ -498,3 +498,183 @@ Aqui empiezan los estilos del footer de la pagina
     color: var(--900);
     opacity: 0.5;
 }
+/* 
+Hasta aqui va la pagina y el pie de la misma pagina
+*/
+
+/* 
+Mediaquery para laptop de 1024px
+*/
+@media screen and (max-width:1024px) {
+    .card--inicio--imagen{
+        width: 200px;
+        height: 200px;
+    }
+    .card--imagen--uno{
+        width: 200px;
+        height: 200px;
+    }
+    .card--img--uno{
+        width: 100%;
+        height: 100%;
+    }
+    .card--problema--imagen{
+        width: 250px;
+        height: 250px;
+    }
+    .card--imagen--dos{
+        width: 250px;
+        height: 250px;
+    }
+    .card--img--dos{
+        width: 100%;
+        height: 100%;
+    }
+    .card--caract--textoUno{
+        grid-column: 2 / 5;
+    }
+    .card--imagen--tres{
+        width: 200px;
+        height: 200px;
+    }
+    .card--img--tres{
+        width: 100%;
+        height: 100%;
+    }
+    .card--caract--textoDos{
+        grid-column: 5 / 9;
+        padding: 0 20px;
+    }
+    .card--decoracion{
+        width: 70px;
+        height: 30px;
+    }
+    .card--imagen--cuatro{
+        width: 150px;
+        height: 150px;
+    }
+    .card--img--cuatro{
+        width: 100%;
+        height: 100%;
+    }
+    .card--caract--textoTres{
+        grid-column: 9 / 11;
+        padding: 0 20px;
+    }
+    .card--caract--textoTres .card--text{
+        font-size: 14px;
+    }
+    .card--imagen--cinco{
+        width: 150px;
+        height: 150px;
+    }
+    .card--img--cinco{
+        width: 100%;
+        height: 100%;
+    }
+    .container--descargas{
+        display: grid;
+        grid-template-columns: 1fr 110px 180px repeat(3, 1fr);
+    }
+    .card--imagen--seis{
+        width: 180px;
+        height: auto;
+    }
+    .card--img--seis{
+        width: 100%;
+        height: 100%;
+    }
+}
+/* 
+Mas que todos los estilos de la mediaquery es para acomodar las imagenes
+*/
+
+/* 
+Mediaquery para la tablet
+*/
+
+@media screen and (max-width:768px) {
+    .container--descargas{
+        display: grid;
+        grid-template-columns: repeat(7 , 1fr);
+        grid-template-rows: 250px 300px;
+    }
+    .card--escalera{
+        grid-column: 2 / 3;
+        grid-row: 1;
+    }
+    .card--descargas--imagen{
+        grid-column: 3 / 6;
+        grid-row: 1 ;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card--imagen--seis{
+        width: 80%;
+        height: 240px;
+    }
+    .card--descargas--textoUno{
+        grid-column: 2 / 4;
+        grid-row: 2;
+    }
+    .card--descargas--textoDos{
+        grid-row: 2;
+        grid-column: 4 / 7;
+    }
+    .card--ventajas--dos{
+        grid-column: 3 / 6;
+    }
+    .card--ventajas--uno, .card--ventajas--tres{
+        display: none;
+    }
+    .card--imagen--ocho{
+        width: 150px;
+        height: 200px;
+    }
+    .container--planes{
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr 20em 1fr;
+        padding: 25px 0;
+    }
+    .card--texto{
+        grid-column: 2;
+        width: 80%;
+        height: 80%;
+    }
+    .card--texto .card--text{
+        font-size: 12px;
+    }
+    .card--texto .card--comprar{
+        width: 10rem;
+    }
+    .card--descargas .card--title{
+        font-size: 1.5em;
+    }
+    .card--descargas .card--btn{
+        padding: 15px 20px;
+        font-size: 0.9em;
+    }
+    .card--list--logotipos{
+        font-size: 15px;
+    }
+    .card--logotipo{
+        width: 150px;
+        height: 30px;
+    }
+    .card--imgLogotipo{
+        width: 100%;
+        height: 100%;
+    }
+    .card--list--enlaces{
+        font-size: 14px;
+    }
+    .card--pie--final .card--title{
+        font-size: 0.8em;
+    }
+}
+/* 
+Hasta aqui van los estilos para los dispositivos de tablets
+*/
