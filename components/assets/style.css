@@ -72,7 +72,6 @@ Aqui empieza la seccion del problema o nececidad de los usuarios
 */
 .container--problema{
     padding: 40px 0;
-    /* background: red; */
     display: grid;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: 1fr;
@@ -281,7 +280,6 @@ Estilos de la seccion de ventajas del aplicativo
 .card--ventajas--uno{
     grid-column: 2 / 3;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     height: 100%;
 }
@@ -341,11 +339,10 @@ Estilos de la seccion de los planes del aplicativo
 .container--planes{
     padding: 50px 0px;
     display: grid;
-    grid-template-columns: 1fr 3rem 1fr 3rem 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5 , 1fr);
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 .card--texto{
     background: var(--900);
@@ -356,37 +353,11 @@ Estilos de la seccion de los planes del aplicativo
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    width: 100%;
+    width: 25rem;
     border-radius: 10px;
     box-shadow: 0 0px 15px 0.1px var(--700);
     color: var(--100);
     text-align: center;
-}
-#siguiente{
-    grid-column: 4;
-    grid-row: 1;
-    width: 3rem;
-    height: 3rem;
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-}
-#anterior{
-    grid-column: 2;
-    grid-row: 1;
-    width: 3rem;
-    height: 3rem;
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-}
-.card--slider{
-    background: red;
-    width: 100%;
-    height: 100%;
-    border: 1px solid black;
-    position: relative;
-    display: none;
 }
 .card--texto .card--content{
     display: flex;
@@ -413,4 +384,117 @@ Estilos de la seccion de los planes del aplicativo
 }
 .card--comprar:focus{
     background: var(--200) !important;
+}
+/* 
+Hasta aqui va la seccion de los planes del aplicativo
+*/
+
+
+/* 
+Empiezan los estilos de la seccion para descargar el app
+*/
+.container--descargar{
+    width: 100%;
+    padding: 60px 0;
+    background-color: var(--900);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--100);
+    flex-direction: column;
+}
+.card--descargas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.card--descargas .card--title{
+    font-size: 1.9em;
+}
+.card--descargas .card--btn{
+    padding: 15px 50px;
+    background: var(--50);
+    border-radius: 10px;
+    color: var(--900);
+    text-decoration: none;
+    font-size: 1.15em;
+    transition: all .2s ease;
+}
+.card--descargas .card--btn:hover{
+    background-color: var(--100);
+}
+.card--descargas .card--btn:focus{
+    background: var(--200);
+}
+/* 
+Hasta aqui va la seccion de descargar la app
+*/
+
+
+/* 
+Aqui empiezan los estilos del footer de la pagina
+*/
+.pie{
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: 1fr 30px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px 0;
+}
+.card--pie--uno{
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.card--list{
+    list-style: none;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--900);
+}
+.card--pie--dos{
+    grid-column: 6 / 7;
+}
+.card--imagen--diez{
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+}
+.card--img--diez{
+    width: 100px;
+    height: 120px;
+}
+.card--pie--tres{
+    grid-column: 9 / 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card--list--enlaces{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.11em;
+}
+.card--enlaces{
+    color: var(--900);
+    text-decoration: none;
+}
+.card--pie--final{
+    grid-row: 2;
+    grid-column: span 11;
+    display: flex;
+    justify-content: center;
+}
+.card--pie--final .card--title{
+    font-size: 22px;
+    color: var(--900);
+    opacity: 0.5;
 }
