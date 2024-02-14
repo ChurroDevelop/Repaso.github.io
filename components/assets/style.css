@@ -727,6 +727,11 @@ Aqui va la mediaquery de la medida de los celulares
     .card--caract--textoUno, .card--caract--textoTres{
         display: none;
     }
+    .card--caract--textoDos{
+        width: 100%;
+        grid-column: 1 / span 11;
+        grid-row: 1;
+    }
     .card--caract--textoUno{
         grid-column: 1 / 11;
         grid-row: 1;
