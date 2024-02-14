@@ -1,5 +1,5 @@
-@import url(components/assets/root.css);
-@import url(components/assets/menu.css);
+@import url(root.css);
+@import url(menu.css);
 html{
     scroll-behavior: smooth;
 }
